@@ -1,0 +1,2 @@
+first_name, last_name, country, age = input("Please enter your first and last names, your country and your age, separated by a coma and a space: ").split(", ")
+print(len(first_name, last_name, country, age))
