@@ -30,7 +30,7 @@ input_radius = float(input("Enter the value of the radius: "))
 area_user = (input_radius**2)*3.14159
 print ("The area of your circle is", area_user)
 
-first_name, last_name, country, age = input("Please enter your first and last names, your country and your age, separated by a coma and a space: ").split(", ")
+first_name, last_name, country, age = input("Please enter your first and last names, your country, and your age, separated by a coma and a space: ").split(", ")
 print(first_name, last_name, country, age)
 
 help("keywords")
