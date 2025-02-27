@@ -22,11 +22,11 @@ floor_division = num_one // num_two
 
 r=30
 area_of_circle = (r**2)*3.14159
-circum_of_circle = 2*r
+circum_of_circle = 2*r*3.14159
 
-input_radius = float(input("Enter the value of the radius: "))
-area_user = (input_radius**2)*3.14159
-print ("The area of your circle is", area_user)
+r = float(input("Enter the value of the radius: "))
+area_of_circle = (r**2)*3.14159
+print ("The area of your circle is", area_of_circle)
 
 first_name, last_name, country, age = input("Please enter your first and last names, your country, and your age, separated by a coma and a space: ").split(", ")
 print(first_name, last_name, country, age)
