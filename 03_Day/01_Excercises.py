@@ -1,7 +1,7 @@
 #Day 3
-age = 18                #1
-height = 1.78           #2
-complex_var = 2+3j      #3
+age = 18                                                                #1
+height = 1.78                                                           #2
+complex_var = 2+3j                                                      #3
 
 base_triangle = float(input("Enter the base of a triangle: "))          #4
 height_triangle = float(input("Enter the height of a triangle: "))
@@ -46,3 +46,61 @@ for x in range(-10, 11):                                                #11
     if y == 0:
         print(f"y is equal to 0 when x has a value of: {x}")
 
+word_length = len("dragon") - len("python")                             #12
+if bool(word_length) is False:
+    print("Both words are the same length")
+else:
+    print("The words have a different length")
+
+words = ['python', 'dragon']                                            #13, 15
+if all('on' in word for word in words):
+    print("The letters 'on' can be found in both words")
+else:
+    print("There is no 'on' in both dragon and python")
+
+if "jargon" in "I hope this course is not full of jargon":              #14
+    print("The word 'jargon' can be found in the sentence")
+else:
+    print("The word 'jargon' cannot be found in the sentence")
+
+print(str(float(len("python"))))                                        #16
+
+number = float(input("Enter a number: "))                               #17
+if number%2 == 0:
+    print("The number is an even number")
+else:
+    print("The number isn´t an even number")
+
+if 7//3 == int(2.7):                                                    #18
+    print(True)
+else:
+    print(False)
+
+if type("10") == type(10):                                              #19
+    print(True)
+else:
+    print(False)
+
+if int(9.8) == 10:                                                      #20
+    print(True)
+else:
+    print(False)
+
+hours = float(input("Enter hours: "))                                   #21
+rate = float(input("Enter rate per hour: "))
+weekly_earning = hours*rate
+print("Your weekly earning is: ", weekly_earning)
+
+years = float(input("Enter the years you´ve lived: "))                  #22
+seconds = years*31536e+3
+print("You´ve lived for", int(seconds), "seconds.")
+
+table = [                                                               #23
+    [1, 1, 1, 1, 1],
+    [2, 1, 2, 4, 8],
+    [3, 1, 3, 9, 27],
+    [4, 1, 4, 16, 64],
+    [5, 1, 5, 25, 125],
+]
+for row in table:
+    print(f"{row[0]:<4} {row[1]:<4} {row[2]:<4} {row[3]:<4} {row[4]:<4}")
