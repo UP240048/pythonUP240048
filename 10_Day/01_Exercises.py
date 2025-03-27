@@ -23,3 +23,17 @@ for row in range(8):
         square = square + "# "
     square = square + "\n"
 print(square)
+
+for i in range(11):                                                             #5
+    print(f"{i} x {i} = {i*i}")
+
+for i in ['Python', 'Numpy','Pandas','Django', 'Flask']:                        #6
+    print(i)
+
+for i in range(101):                                                            #7
+    if i%2==0:
+        print(i)
+
+for i in range(101):                                                            #8
+    if i%2==1:
+        print(i)
