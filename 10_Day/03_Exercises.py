@@ -204,7 +204,7 @@ for i in range(-1, -5, -1):
 print(reverse_fruit)
 
 
-set_lan = set()
+set_lan = set()                                                                     #3
 list_lan = []
 frequency_lan = {}
 counter = 0
@@ -2849,4 +2849,11 @@ for i in sorted_lan:
     if counter == 10:
         break
 
-print(dict_population)
+counter = 0
+sorted_pop = sorted(dict_population.items(), key = lambda item : item[1], reverse=True)
+print("The most populated countries around the world are: ")
+for i in sorted_pop:
+    print(f"{i[0]}, with {i[1]} people.")
+    counter += 1
+    if counter == 10:
+        break
